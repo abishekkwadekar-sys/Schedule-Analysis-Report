@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>📊 My Dashboard</h1>
+
+<canvas id="chart"></canvas>
+
+<script>
+const ctx = document.getElementById('chart');
+
+new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ['Connected','Not Connected','Dropped'],
+datasets: [{
+label: 'Calls',
+data: [100,50,25]
+}]
+}
+});
+</script>
+
+</body>
+</html>
